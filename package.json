@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/javieroc/pet-rest-api-node.git"
   },
-  "author": "Javier Ocampo - Fabio Rodriguez",
+  "author": "Javier Ocampo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/javieroc/pet-rest-api-node/issues"
@@ -22,6 +22,6 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
-    "nodemon": "^1.10.2"
+    "nodemon": "^1.11.0"
   }
 }
