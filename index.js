@@ -3,9 +3,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const config = require('./config.json')
+const config = require('./config')
 
-const mongodbUri = `mongodb://${config.mongodb.user}:${config.mongodb.pass}@${config.mongodb.host}/${config.mongodb.database}`
+const mongodbUri = `${config.mongodb.url}/${config.mongodb.database}`;
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -14,23 +14,28 @@ const port = process.env.PORT || 3000
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+// Get product list.
 app.get('/api/product', (req, res) => {
-  res.status(200).send({products: []})
+  res.status(200).send({ products: [] })
 })
 
+// Get a product by id.
 app.get('/api/product/:productId', (req, res) => {
 
 })
 
+// Insert a new product.
 app.post('/api/product', (req, res) => {
   console.log(req.body)
   res.status(200).send({message: 'the product its ok!'})
 })
 
+// Update a particular product
 app.put('/api/product/:productId', (req, res) => {
 
 })
 
+// Delete a product by id.
 app.delete('/api/product/:productId', (req, res) => {
 
 })
