@@ -5,7 +5,8 @@ const config = {
     mongodb: {
         url: "",
         database: ""
-    }
+    },
+    SECRET_TOKEN: ''
 }
 
 module.exports = config;
