@@ -21,7 +21,7 @@ router.put('/product/:productId', productController.updateProduct)
 // Delete a product by id.
 router.delete('/product/:productId', productController.deleteProduct)
 
-router.get('/private', auth.isAuth, (req, res) => {
+router.get('/private', auth, (req, res) => {
     res.status(200).send({ message: `Tiene acceso` })
 })
 
