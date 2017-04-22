@@ -1,1 +1,3 @@
-# pet-rest-api-node
+# REST API
+
+Sample of rest api using node js
