@@ -1,3 +1,3 @@
 # REST API
 
-Sample of rest api using node js
+Sample of rest api using node js and mongo
